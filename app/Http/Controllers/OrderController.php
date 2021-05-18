@@ -57,7 +57,7 @@ class OrderController extends BaseController
         $orderDetail->unit_price= $price;
         $orderDetail->book_id=$bookID;
         $orderDetail->order_id= $order->id;
-        $orderDetail->branch_code= "HN";
+        // $orderDetail->branch_code= "HN";
         $orderDetail->save();
         return redirect()->route('index-order');
     }
