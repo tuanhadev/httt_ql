@@ -69,7 +69,7 @@
         <div class="form-group">
             <div class="col-md-8 text-right">
                 <button type="submit" class="btn btn-success">
-                    <a href="/HTTT_QuanLy/public/orders/">Quay Lại</a> <span class="glyphicon glyphicon-fast-forward"></span>
+                    <a href="/orders/">Quay Lại</a> <span class="glyphicon glyphicon-fast-forward"></span>
                 </button>
             </div>
         </div>

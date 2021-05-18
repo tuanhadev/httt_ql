@@ -19,7 +19,7 @@
                         <h4 class="modal-title">THÊM MỚI DỮ LIỆU</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form class="photo-form" action="/HTTT_QuanLy/public/customers/add-new-customer" method="POST">
+                    <form class="photo-form" action="/customers/add-new-customer" method="POST">
                         {{ csrf_field() }}
                         <div class="modal-body">
                             <label for="fname">Tên Khách Hàng</label>
@@ -71,7 +71,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form class="photo-form" action="/HTTT_QuanLy/public/cuatomers/update-customer/{{$value['id']}}" method="POST">
+                            <form class="photo-form" action="/cuatomers/update-customer/{{$value['id']}}" method="POST">
                                 {{ csrf_field() }}
                                 <div class="modal-body mx-3">
                                     <div class="md-form mb-5">
@@ -111,7 +111,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form action="/HTTT_QuanLy/public/customers/delete-customer/{{$value['id']}}" method="POST">
+                            <form action="/customers/delete-customer/{{$value['id']}}" method="POST">
                                 @csrf
                                 <div class="modal-body mx-3">
                                     <p class="text-center h4">Bạn có muốn xóa khách hàng {{$value['name']}} không?</p>

@@ -19,7 +19,7 @@
                         <h4 class="modal-title">THÊM MỚI DỮ LIỆU</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form class="photo-form" action="/HTTT_QuanLy/public/books/add-new-book" method="POST">
+                    <form class="photo-form" action="/books/add-new-book" method="POST">
                         {{ csrf_field() }}
                         <div class="modal-body">
                                 <label for="fname">Tên Sách </label>
@@ -97,7 +97,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <form class="photo-form" action="/HTTT_QuanLy/public/books/update-book/{{$value['id']}}" method="POST">
+                                <form class="photo-form" action="/books/update-book/{{$value['id']}}" method="POST">
                                     {{ csrf_field() }}
                                     <div class="modal-body mx-3">
                                         <div class="md-form mb-5">
@@ -163,7 +163,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <form action="/HTTT_QuanLy/public/books/delete-book/{{$value['id']}}" method="POST">
+                                <form action="/books/delete-book/{{$value['id']}}" method="POST">
                                     @csrf
                                     <div class="modal-body mx-3">
                                         <p class="text-center h4">Bạn có muốn xóa {{$value['name']}} không?</p>

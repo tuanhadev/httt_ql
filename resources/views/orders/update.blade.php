@@ -11,7 +11,7 @@
         @endif
         <h2>Sửa Thông Tin Đơn Hàng </h2>
     </div>
-    <form class="photo-form" action="/HTTT_QuanLy/public/orders/update-order/{{$data['id']}}" method="POST">
+    <form class="photo-form" action="/orders/update-order/{{$data['id']}}" method="POST">
         <div class="form-horizontal">
             <hr/>
             <div class="form-group">

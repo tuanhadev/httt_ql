@@ -11,7 +11,7 @@
         @endif
         <h2>Thêm Mới Đơn Hàng </h2>
     </div>
-    <form class="photo-form" action="/HTTT_QuanLy/public/orders/add-new-order" method="POST">
+    <form class="photo-form" action="/orders/add-new-order" method="POST">
         <div class="form-horizontal">
             <hr/>
             <div class="form-group">

@@ -10,7 +10,7 @@
             </div>
         @endif
         <h2>DANH SÁCH ĐƠN HÀNG </h2>
-            <h5><button type="button" class="btn btn-primary" ><a href="/HTTT_QuanLy/public/orders/get-order">THÊM MỚI DỮ LIỆU</a></button></h5>
+            <h5><button type="button" class="btn btn-primary" ><a href="/orders/get-order">THÊM MỚI DỮ LIỆU</a></button></h5>
         <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
         <tr>
@@ -36,13 +36,13 @@
             <td><?php echo $value['updated_at']?></td>
             <td>
                 <button type="button" class="btn btn-primary">
-                    <a href="/HTTT_QuanLy/public/orders/order-detail/{{$value['id']}}" >Chi Tiết</a><br>
+                    <a href="/orders/order-detail/{{$value['id']}}" >Chi Tiết</a><br>
                 </button>
                 <button type="button" class="btn btn-warning">
-                    <a href="/HTTT_QuanLy/public/orders/update-order/{{$value['id']}}" class="btn-warning">Sửa</a><br>
+                    <a href="/orders/update-order/{{$value['id']}}" class="btn-warning">Sửa</a><br>
                 </button>
                 <button type="button" class="btn btn-danger">
-                    <a href="/HTTT_QuanLy/public/orders/delete-order/{{$value['id']}}" class="btn-danger">Xóa</a>
+                    <a href="/orders/delete-order/{{$value['id']}}" class="btn-danger">Xóa</a>
                 </button>
             </td>
         </tr>
