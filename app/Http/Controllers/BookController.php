@@ -34,6 +34,7 @@ class BookController extends BaseController
 //            'status' => 'required',
 //            'image' => 'required'
 //        ]);
+        $image_name = "";
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
@@ -47,7 +48,7 @@ class BookController extends BaseController
         $book->price = $request->txtPriceBook;
         $book->supplier = $request->txtSupplierBook;
         $book->status = $request->txtStatusBook;
-//        $book->image = $image_name;
+        $book->image = $image_name;
         $book->save();
         return redirect()->route('index-book');
     }
