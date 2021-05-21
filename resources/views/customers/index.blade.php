@@ -71,7 +71,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form class="photo-form" action="/cuatomers/update-customer/{{$value['id']}}" method="POST">
+                            <form class="photo-form" action="/customers/update-customer/{{$value['id']}}" method="POST">
                                 {{ csrf_field() }}
                                 <div class="modal-body mx-3">
                                     <div class="md-form mb-5">

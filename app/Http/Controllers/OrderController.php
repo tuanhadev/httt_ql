@@ -105,13 +105,13 @@ class OrderController extends BaseController
         $order->total_price	 = $quantity*$price;
         $order->save();
 
-        $orderDetail = Order_details::find($id);
-        $orderDetail->quantity=	$quantity;
-        $orderDetail->unit_price= $price;
-        $orderDetail->book_id=$bookID;
-        $orderDetail->order_id= $order->id;
-        $orderDetail->branch_code= "HN";
-        $orderDetail->save();
+        // $orderDetail = Order_details::find($id);
+        // $orderDetail->quantity=	$quantity;
+        // $orderDetail->unit_price= $price;
+        // $orderDetail->book_id=$bookID;
+        // $orderDetail->order_id= $order->id;
+        // $orderDetail->branch_code= "HN";
+        // $orderDetail->save();
         return redirect()->route('index-order')->with(['flash_level' => 'result_msg', 'flash_massage' => ' Sửa Đơn Hàng Thành Công !']);
     }
 
@@ -119,8 +119,8 @@ class OrderController extends BaseController
     {
         $order = Orders::find($id);
         $order->delete();
-        $orderDeatil = Order_details::find($id);
-        $orderDeatil->delete();
+        // $orderDeatil = Order_details::find($id);
+        // $orderDeatil->delete();
         $order = Orders::orderBy('id', 'ASC')->paginate(10);
         $list_order= Orders::getAllOrder();
         return redirect()->route('index-order')->with(['flash_level' => 'result_msg', 'flash_massage' => ' Xóa Đơn Hàng Thành Công !']);
